@@ -1,0 +1,73 @@
+.fadeIn{
+    /* define cuanto va a durar la animacion */
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    /* define que se va a cumplir la regla de ida y regreso */
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode:both ;
+    /* da nombre a la animacion */
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+/* definimos aminaciones */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.fadeInDown{
+     /* define cuanto va a durar la animacion */
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+     /* define que se va a cumplir la regla de ida y regreso */
+     animation-fill-mode: both;
+     -webkit-animation-fill-mode:both ;
+     /* da nombre a la animacion */
+     animation-name: fadeInDown;
+     -webkit-animation-name: fadeInDown;
+}
+@keyframes fadeInDown{
+    from{
+        opacity: 0;
+        /* da posision al elemento */
+        -webkit-transform: translate3d(0, -100%,0);
+        transform: translate3d(0, -100%,0);
+    }
+    to{
+        opacity:1 ;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0, 0,0);
+    }
+}
+
+.fadeInUp{
+    /* define cuanto va a durar la animacion */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    /* define que se va a cumplir la regla de ida y regreso */
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode:both ;
+    /* da nombre a la animacion */
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    /* -webkit- asegura que los valores dados se puedan cumplir
+    es un paquete que acopla a los viejos y nuevos navegadores 
+    haciendo que siempre las animaciones se puedan hacer */
+}
+@keyframes fadeInDown{
+   from{
+       opacity: 0;
+       /* da posision al elemento */
+       -webkit-transform: translate3d(0, 100%,0);
+       transform: translate3d(0, 100%,0);
+   }
+   to{
+       opacity:1 ;
+       -webkit-transform: translate3d(0,0,0);
+       transform: translate3d(0, 0,0);
+   }
+}

@@ -1,0 +1,298 @@
+/*reglas
+selectores
+declaraciones
+propiedades 
+valores */
+
+/*Gris oscuro = #1d252c*/
+/*Gris claro = #626262*/
+/*Background gris  = #1b2127*/
+
+
+
+/* selector de etiqueta: nombre de la etiqueta */
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px;
+}
+figure {
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Fjalla One',sans-serif;
+  /* tipo de fuente */
+  font-weight: normal;
+  /* separacion entre letras */
+  /* letter-spacing: -.2px; */
+}
+h1{
+  /* asigna tamaño a las fuentes */
+  font-size: 40px;
+  /* cambia el alto de linea */
+  line-height: 1.5;
+  /* espacio entre letras */
+  letter-spacing: -.2px;
+  /* transformar la sletras en mayuscula o menisculas */
+  /* text-transform: uppercase; */
+  /* decoracion de texto */
+  /* text-decoration: dashed; */
+  color: white;
+  /* margin: 100px 150px 700x 30px;  */
+  margin: 0;
+}
+
+h1 strong{
+  color: #026fff;
+}
+h2{
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+ol, ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+
+/* selector descendente: elemento hijo de algun otro elemento*/
+body header div nav ol li a {
+
+}
+
+/* selector de clase */
+.hero{
+  height: 300px;
+  /* background-image: url('../images/hero.jpg'); */
+  background-color: #1b2127;
+  /* background-size: 500px 300px; */
+  /* para que no se repita la imagen de fondo */
+  /* background-repeat: no-repeat; */
+  /* background-position-x: right ; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-image{
+  object-fit: cover;
+}
+.portfolio{
+  background: #fafafa;
+  padding: 20px;
+}
+.project{
+  /* border-top: 10px solid red;
+  border-right:10px solid green;
+  border-left:10px solid orange;
+  border-bottom:10px solid purple; */
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+  background:white;
+  /* box-sizing: border-box; */
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+
+}
+.project-course, .project-date, .project-url{
+  margin: 10px 0;
+}
+.project-description{
+  font-size: 20px;
+}
+.project strong{
+  font-family: 'Fjalla One',sans-serif;
+}
+.project-title{
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.project-details{
+  width: 500px;
+  
+}
+.project-imageConteiner{
+  width: 500px;
+}
+/* .project-date{
+  margin: 10px 0 ;
+} */
+
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px; 
+}
+
+
+.header a { /* .header a hereda de .header ol li */
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 10px; 
+}  
+.menu { /* .menu hereda de .header */
+  height: inherit;
+}
+.header ol { /* .header ol hereda de .menu */
+  display: flex;
+  height: inherit;
+}
+
+
+.header ol li { /* .header ol li hereda de .header ol */
+  height: inherit;
+}
+
+.footer{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer img {
+    vertical-align: middle;
+}
+.footer a{
+    color: white;
+}
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.event-list-title{
+  margin-left: 20px;
+}
+.event{
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  /* cuando un evento se desborde se oculta */
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  /* funciona para que no se vea fea la imagen */
+  object-fit: cover; 
+}
+
+.event-detail{
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: white;
+  /* sobre pone las cosas */
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+.event-descriptione{
+  text-align: left;
+}
+.event-url{
+ border: 1px solid #056fff;
+ padding: 5px 20px;
+ text-decoration: none;
+ color: #056fff;
+ border-radius: 5px;
+
+}
+.contac{
+  background-color: #056fff;
+  color:white;
+  height: 150px;
+  /* alineado vertical con display flex y  align-items center */
+  display: flex;
+  align-items: center ;
+  /* alineado horizontal con justify-content */
+  justify-content: space-between ;
+}
+.portafolio-title{
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.social{
+    /* border:1px solid red; */
+}
+.social-links{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* border:1px solid white; */
+    background-size: 50px 50px ;
+    margin:0 10px;
+}
+.social-links .twiter{
+  background-image: url('../images/twitter.svg');
+  /* border:1px solid white; */
+}
+.social-links .github{
+  background-image: url('../images/github.svg');
+}
+
+.social-links .facebook{
+  background-image: url('../images/facebook.svg');
+  
+}
+.social-links .instagram{
+  background-image: url('../images/instagram.svg');
+}
+.form-email input{
+  border-color: grey;
+  padding: 10px 20px 10px 25px;
+  border-style: solid;
+  border-radius: 5px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x:5px ;
+}
+.form-email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    width: 100px;
+    margin-top: 10px;
+    /* margin: 10px auto 0; */
+    border-radius: 5px;
+}
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    /* border: 1px solid red; */
+    width: 1000px;
+    margin: 0 auto;
+    /* heredamos datos de las demas clases */
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+/* github facebook instagram */
+/* selector de id */
+#portafoleo{
+
+}

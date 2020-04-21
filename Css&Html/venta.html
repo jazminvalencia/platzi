@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brand</title>
+</head>
+    <body>
+        <!-- empieza nav -->
+        <nav class="fadeInDown">
+            <div class="brand_image ">
+                <img src="img/logo.png" alt="imagen logo">
+            </div>
+            <ul class="nav_options">
+                <li class="options"><a href="#">Fanqs</a></li>
+                <li class="options"><a href="#">Producto y descripcion</a></li>
+            </ul>
+        </nav>
+        <!-- termina nav -->
+        <!-- formulario venta -->
+        <div class="container container_padding">
+            <div class="row">
+                <div class="col-4">
+                    <div class="modulo_pago">
+                        <div class="modulo_pago_img">
+                            <img src="img/box2.png" alt="">
+                        </div>
+
+                        <h3>Producto 1</h3>
+                        <p>
+                            Miles de productos hay en el mercado, pero nada como una caja con gatitos, 
+                            Miles de productos hay en el mercado, pero nada como una caja con gatitos
+                        </p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="modulo_pago">
+                      <form  action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=782XXJ3WLCKKU" method="post">
+                          <label for="name">Nombre</label>
+                          <br>
+                        <!-- input crea un campo de texto para que llene el usuario, placeholder= pone datos dentro
+                        del input en pantalla -->
+                          <input class="data" type="text" placeholder="" name="name">
+                          <br>
+                          <label for="e-mail">E-mail</label>
+                          <br>
+                          <input class="data" type="text" placeholder="" name="email">
+                          <br>
+                          <label for="telefono">Telefono</label>
+                          <br>
+                          <input class="data" type="text" placeholder="" name="phone">
+                          <input class="main_botton" type="submit" name="submit" value="Submit">
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- formulario ventas -->
+        <!-- empieza el footer -->
+        <footer>
+            <div class="option">
+                <p>Terminos y condiciones</p>
+            </div>
+            <div class="option contact"><a href="mailito:contacto@contacto.com">contacto@contacto.com</a></div>
+        </footer>
+        <!-- termina el footer -->
+    <script src="scripts/java.js"></script>
+    </body>
+</html>
