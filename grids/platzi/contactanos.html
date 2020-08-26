@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<style>
+.container-contacto{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". title"
+                         "map sucursales"
+                         "map form";
+    width: 100%;
+    height: 750px;
+}
+
+.title-contacto{
+    grid-area:title;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    font-size: 20px;
+}
+
+.map-contaider{
+    grid-area: map;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+.container-text{
+    grid-area: sucursales;
+    color: #767676;
+    display: inline-table;
+    justify-content: center;
+}
+
+.container-form{
+    grid-area: form;
+}
+.title-contactos{
+    font-size: 16px;
+}
+
+.from-button{
+    display: grid;
+    justify-content: center;
+
+}
+@media screen and (max-width: 768px) {
+    .container-contacto{
+    grid-template-columns: 1fr ;
+    grid-template-areas: "title"
+                            "map"
+                            "map"
+                            "sucursales"
+                            "form";
+    }
+}
+</style>
+<body>
+    <section class="container-contacto">
+        <p class="title-contacto bold">Contactanos</p>
+        <section class="map-contaider">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7193.702310794917!2d-107.48007516221455!3d24.799931696112754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bccfc59965c451%3A0xde1aeabcd8f07684!2zUGFycXVlIOKAnE1hcnTDrW5leiBEw61heuKAnQ!5e0!3m2!1ses-419!2smx!4v1593711418539!5m2!1ses-419!2smx" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+        <section class="container-text">
+            <article>
+                <p class="title-contactos">MATRIZ CULIACAN :</p>
+                <p class="text-contactos">Heroico colegio militar 3100,80280, Culiacán de Rosales</p>
+            </article>
+            <article>
+                <p class="title-contactos">SUCURSAL ZAPATA:</p>
+                <p class="text-contactos">
+                    Blvd. Emiliano Zapata 1860, Centro Sinaloa, 80000 Culiacán Rosales, Sin 
+                </p>
+            </article>
+             <article>
+                <p class="title-contactos">SUCURSAL MONTERREY:</p>
+                <p class="text-contactos">
+                    Av. Félix U. Gómez # 4204, Col. Valle del Nogalar, San Nicolás de los Garza, Nuevo León 66080
+                </p>
+            </article>
+        </section>
+        <section class="container-form">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="last_name" type="text" class="validate">
+                            <label for="Nombre">Nombre</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="last_name" type="text" class="validate">
+                            <label for="Telefono">Telefono</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="Mensaje">Mensaje</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 from-button">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar Mensaje
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

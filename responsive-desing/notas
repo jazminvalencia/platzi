@@ -1,0 +1,50 @@
+view port
+Se utiliza la etiqueta meta se llama
+<meta name="viewport" content="width=device-width, initial-scale= 1">
+name = 'viewport nos indica que sera'
+width= device-width = manipula la adaptacion de la pantalla del dispositivo
+initial-scale= 1 = hace el zoom de la pantalla con valores de 0 a 1
+
+Unidades de medida
+Porcentajes: longitud referente al tamaño del elemento padre.
+em: unidad relativa al tamaño de la fuente especificada mas cercana.
+rem: unidad relativa al tamaño de la fuente mas alejada.
+VH/VW : unidad relativa porcentuada al view port.
+
+Que son las medias queries? 
+son pedasos de codigo que nos permiten adaptar el contenido a las caracteristicas del 
+dispositivo.
+
+SINTAXIS DE UNA MEDIA QUERIE
+Se compone dde una media type y una o mas condiciones
+
+@media media type and (condicion){
+
+}
+
+MEDIA TYPE
+las media type pueden ser (screeen y print) que son los tipos de pantalla
+screen es para la pantalla y print es para cuando imprimes la pantalla en una hoja.
+
+CONDICIONES DE LAS MEDIAS QUERIES:
+Max-width = hasta
+Min-width = desde
+
+Ejemplo
+todas las pantallas con un ancho inferior o igual a 768px 
+@media screen and (Max-width: 768px){
+
+}
+todas las pantallas con un ancho desde 768px 
+@media screen and (Min-width: 768px){
+
+}
+
+----------------------------
+FUNCION EN CSS
+display:flex;
+flex-wrap: wrap;
+cuando tenemos el display flex hacemos flexible el contenido
+pero cuando agregamos el flex-wrap hacemos que se apile el contenido uno
+debajo de otro.
+
