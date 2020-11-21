@@ -48,3 +48,37 @@ cuando tenemos el display flex hacemos flexible el contenido
 pero cuando agregamos el flex-wrap hacemos que se apile el contenido uno
 debajo de otro.
 
+centrado horizontal
+justify-content: center;
+
+cuando utilizamos un disblay:block; es mejor usar el width como auto da mas rendimiento
+
+flex-shrink:0; se utiliza para que no se haga un responsive y se hereda con el display 
+de flex
+
+la etiqueta vale mas que la clase
+
+css Prositions 
+static:es la prioridad por defecto
+con las otras opciones, se activan las propiedades de top,bottom,left, right yz-index
+Relative:el objeto se mueve en base al lugar donde se encuentra originalmente.
+Absolute:el objeto se ubica de manera absoluta con el elemento mas cercano que tenga 
+posicion relativa o con el body.
+Fixed:el elemento se muestra de manera fija en el viewport.
+Sticky:el elemento se queda de manera fija una vez que aparece en la pantalla.
+
+overflow: hidden;
+nos dice que cuando se desborde en este caso la imagen que se oculte lo
+que esta fuera del contenedor 
+
+height*100/width = calculo de la proporcion en el video horizontal
+width*100/height = calculo de la proporcion en el video vertical
+
+tecnica para centrar con display block es 
+alinear el alto que debe ser igual al alto que ya tienes declarado
+y luego centramos el texto, Ejemplo:
+line-height: 40px;
+text-align: center;
+
+rgba(rojo, verde, azul, opacidad);
+rgba(0-255, 0-255, 0-255, 0-1);

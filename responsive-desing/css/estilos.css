@@ -8,6 +8,51 @@ valores */
 /*Gris claro = #626262*/
 /*Background gris  = #1b2127*/
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?nvjqiu');
+  src:  url('../fonts/icomoon.eot?nvjqiu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?nvjqiu') format('truetype'),
+    url('../fonts/icomoon.woff?nvjqiu') format('woff'),
+    url('../fonts/icomoon.svg?nvjqiu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+  color: #1877f2;
+}
+.icon-github:before {
+  content: "\e901";
+}
+.icon-instagram:before {
+  content: "\e902";
+  color: #e4405f;
+}
+.icon-latex:before {
+  content: "\e903";
+  color: #008080;
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
 
 /* selector de etiqueta: nombre de la etiqueta */
 body{
@@ -116,12 +161,17 @@ body header div nav ol li a {
   margin-top: 0;
 }
 .project-details{
-  width: 500px;
+  width: 50%;
   
 }
 .project-imageConteiner{
-  width: 500px;
+  width: 50%;
 }
+
+.project-imageConteiner img{
+  max-width: 100%;
+}
+
 /* .project-date{
   margin: 10px 0 ;
 } */
@@ -181,8 +231,8 @@ body header div nav ol li a {
   margin-left: 20px;
 }
 .event{
-  margin: 10px;
-  width: 480px;
+  margin: 1px;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   /* cuando un evento se desborde se oculta */
@@ -244,19 +294,19 @@ body header div nav ol li a {
     background-size: 50px 50px ;
     margin:0 10px;
 }
-.social-links .twiter{
+.social-links.twiter{
   background-image: url('../images/twitter.svg');
-  /* border:1px solid white; */
+ 
 }
-.social-links .github{
+.social-links.github{
   background-image: url('../images/github.svg');
 }
 
-.social-links .facebook{
+.social-links.facebook{
   background-image: url('../images/facebook.svg');
   
 }
-.social-links .instagram{
+.social-links.instagram{
   background-image: url('../images/instagram.svg');
 }
 .form-email input{
@@ -285,6 +335,8 @@ body header div nav ol li a {
   font-family: 'Source Sans Pro', sans-serif;
 }
 .container{
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     /* heredamos datos de las demas clases */
     display: inherit;
@@ -300,22 +352,242 @@ body header div nav ol li a {
 /* empezar con la media query mas grande */
 /* medidas estandar 1024,768,480,320 */
 
-@media screen and (max-width:1024px){
-
+.html-video{
+  width: 100%;
+  height: auto;
+}
+.youtube-video{
+ /* para hacer que la imagen se estire*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
-@media screen and (max-width:768px){
- body{
-  border: 10px solid black;
+.flexible-video{
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding-top:56.25%;
+  background: blue;
+}
 
- }
+.burguer-buttom{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,.5);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
+@media screen and (max-width:1023px){
+  .event-list-title{
+    margin-left: 0;
+  }
+
+  .portfolio{
+    padding: 0;
+  }
+
+  .container{
+    padding: 0 1em;
+  }
+
+  .hero{
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+
+  h1{
+    font-size: 2em;
+    z-index: 2;
+  }
+
+  .hero-image{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .html-video{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width:767px){
+
+  h2{
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
+
+  .burguer-buttom{
+    display: block;
+  }
+  
+  .header{
+    display: block;
+    height: auto;
+  }
+
+  .header ol{
+    display: initial;
+  }
+
+  .header ol li {
+    height: 50px;
+  }
+
+  .header a {
+    justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+  }
+
+  .header .logo{
+    text-align: center;
+  }
+
+  .menu{
+    position: fixed;
+    background: rgba(5, 111, 255,0.9);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: .3s;
+  }
+
+  .menu.is-active{
+    left: 0;
+  }
+
+  .project{
+    display: block;
+  }
+
+  .project-imageConteiner{
+    width: auto;
+    text-align: center;
+  }
+
+  .project-details{
+    width: auto;
+  }
+
+  .project-details{
+    width: auto;
+    /*font-size:10px;*/
+  }
+  .project-course, .project-date, .project-url{
+    margin: .3em 0;
+  }
+
+  .project-title{
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+
+  .project-url{
+    font-size: 1em;
+  }
+
+  .project-date{
+    font-size: 1em;
+  }
+  .project-course{
+    font-size: 1.7em;
+
+  }
+
+  .project-description{
+    font-size: 1em;
+  }
+
+  .event{
+    width: auto;
+    flex-shrink: initial;
+  }
+
+  .event img{
+    width: 100%;
+  }
+
 }
 
 @media screen and (max-width:480px){
+  h1{
+    font-size: 1.5em;
+  }
   
+  .project-details{
+    width: auto;
+    font-size: 14px;
+  }
+
+  .event-detail{
+    margin: 2em .5em .5em;
+    padding: 1em;
+  }
+
+  .contac{
+    height: auto;
+    padding: 1.5em 0;
+    text-align: center;
+    display: block;
+  }
+
+  .form-email button{
+    margin: 1em auto;
+  }
+
+  .form-email h3{
+    margin-top: 0;
+  }
+
+  .footer{
+    display: block;
+    text-align: center;
+    border:1px solid transparent;
+  }
+
+  .social-links{
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+  }
 }
 
 @media screen and (max-width:320px){
-  
+  h1{
+    font-size: 1.2em;
+  }
+
+  .hero{
+    padding: 2em 1em;
+  }
 }
 
