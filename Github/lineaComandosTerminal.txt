@@ -1,0 +1,16 @@
+en git bash --> terminal similar a linux
+pwd --> muestra la ruta donde estas
+cd --> para cambiar de carpeta 
+cd .. --> sale de la carpeta.
+ls --> listar las carpetas
+ls -al --> muestrame todos los archivos hasta los ocultos.
+ls -l muestra los archivos pero los ocultos no.
+clear / control+l Para Windos/ coman+l Mac--> limpia la pantalla
+
+mkdir--> crea una carpeta
+touch --> comando que permite crear archivos que no tienen nada por dentro: Ejemplo --> "touch vacio.txt"
+cat --> muestra rapidamente el contenido del archivo: Ejemplo --> "cat vacio.txt"
+history --> muestra todos los comandos que has realizado. Puedes utilizar los comandos que te muestra history con "!NumeroComando"
+rm --> para borrar un archivo: Ejamplo --> "rm vacio.txt" CUIDADO CON EL COMANDO RM PUEDES BORRAR EL DISCO 
+--help --> explica como funciona cada comando.
+

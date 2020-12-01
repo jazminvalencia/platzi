@@ -1,0 +1,16 @@
+git init ---> empieza en la carpeta un repositorio
+git add nombreArchivo.txt ---> la base de datos de cambios sabe que existe el archivo que acabas de agregar
+git add . --> agregas todos os cambios que tengas
+git commit -m "Mesaje que quieres integrar" ---> envia los ultimos cambios del archivo a la base de datos del sistema de control de versiones
+
+git status --> cambios que has hecho
+git show ---> muestra todos los cambios historicos hechos en el repositorio.
+git log nombreArchivo ---> muestra todos los cambios historicos de un archivo en espesifico.
+git push ---> sube cambios 
+git pull --->baja cambios
+
+git fue creado por linux
+
+stagin --> memoria ram es el espacio temporal donde agregas archivos que vas cambiando
+repositorio --> repositorio real donde llegan los commits
+
