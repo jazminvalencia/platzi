@@ -1,0 +1,37 @@
+git init --> crea un repositorio local en la computadora
+git add nombreArchivo.txt ---> la base de datos de cambios sabe que existe el archivo que acabas de agregar
+git add . --> agregas todos los cambios que tengas.
+git rm --cached --> para borrar archivos en cache: Ejemplo --> git rm --cached initGit.txt.
+git commit --> envia los cambios al repositorio.
+git commit -m "Mensaje" --> envia los cambios al repositorio pero con un mensaje incluido.
+git log --> muestra toda la historia que han tenido los archivos.
+git show --> cambios que ha tenido un archivo: Ejemplo git show Archivo.txt.
+git diff --> muestra las diferencias entre commits: Ejemplo git diff NumeroComitt
+
+
+CONFIGURACION DE QUIENES SUBEN LOS CAMBIOS:
+git config --> para que te muestre las opciones de configuracion.
+git config --list --> Configuracion que tienes ahora mismo en tu git.
+git config --lis --show-origin --> donde estan las congifuraciones guardadas
+git config --global user.name "nombre" --> para agregar el usuario 
+git config --global user.email "correo@correo.com" --> para agregar el correo.
+ 
+VOLVER EN EL TIEMPO:
+git reset --> nos permite volver a una version anterior, Existen 2 tipos de reset
+DURO que hace que todo vuelva a la version anterior y borra todos los cambios que has hecho antes
+Ejemplo reset DURO --> git reset "version a la que queremos volver" --hard
+SUABE 
+volvemos a la verion anterior pero lo que este en git add seguira en git add disponible para la version nueva de commit
+Ejemplo reset SUABE --> git reset "version a la que queremos volver" --soft
+
+VER COMO ERA UN PRIMER CAMBIO
+git checkout --> se utiliza para ver como era el archovo antes: Ejemplo --> git checkout "log"
+
+GIT RM
+nos ayuda a borrar archivos del Git sin eliminar su historial del sistema versiones
+se utiliza de dos formas 
+git rm --cached --> elimina los archivos del area de staging y el proximo commit pero los mantiene en nuestro disco duro
+git rm --force --> elimina los archivos de git y del disco duro 
+
+GIT RESET
+nos ayuda a volver en el tiempo pero no como el checkout que nos deja mirar pasear y volver 
