@@ -82,3 +82,6 @@ text-align: center;
 
 rgba(rojo, verde, azul, opacidad);
 rgba(0-255, 0-255, 0-255, 0-1);
+
+telefono en vertical: portrait
+telefono en horizontal: landscape
