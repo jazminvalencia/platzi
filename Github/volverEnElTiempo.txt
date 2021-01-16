@@ -1,0 +1,23 @@
+VOLVER EN EL TIEMPO:
+git reset --> nos permite volver a una version anterior, Existen 2 tipos de reset
+DURO que hace que todo vuelva a la version anterior y borra todos los cambios que has hecho antes
+Ejemplo reset DURO --> git reset "version a la que queremos volver" --hard
+SUABE 
+volvemos a la verion anterior pero lo que este en git add seguira en git add disponible para la version nueva de commit
+Ejemplo reset SUABE --> git reset "version a la que queremos volver" --soft
+
+VER COMO ERA UN PRIMER CAMBIO
+git checkout --> se utiliza para ver como era el archovo antes: Ejemplo --> git checkout "log"
+
+GIT RM
+nos ayuda a borrar archivos del Git sin eliminar su historial del sistema versiones
+se utiliza de dos formas 
+git rm --cached --> elimina los archivos del area de staging y el proximo commit pero los mantiene en nuestro disco duro
+git rm --force --> elimina los archivos de git y del disco duro 
+
+GIT RESET
+nos ayuda a volver en el tiempo pero no como el checkout que nos deja mirar pasear y volver.
+
+Git RESET HARD 
+comando para sacar los archivos del area de staging, es para que los ultimos cambios de los archivos no se envien al commit
+almenos que cambiemos de opinion y lo mandemos con el add 

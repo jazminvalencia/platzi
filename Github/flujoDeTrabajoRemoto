@@ -1,0 +1,3 @@
+git fetch --> para traer una actualizacion pero no lo copea en los archivos del repositorio local
+git merge --> copea los archivos del repositorio remoto en el repositorio local
+git pull --> copea la bd, el repositorio local y el directorio.
