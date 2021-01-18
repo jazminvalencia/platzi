@@ -4,6 +4,7 @@ git add . --> agregas todos los cambios que tengas.
 git rm --cached --> para borrar archivos en cache: Ejemplo --> git rm --cached initGit.txt.
 git commit --> envia los cambios al repositorio.
 git commit -m "Mensaje" --> envia los cambios al repositorio pero con un mensaje incluido.
+git commit -am "Mensaje" --> es el comando add y commit juntos.
 git log --> muestra toda la historia que han tenido los archivos.
 git show --> cambios que ha tenido un archivo: Ejemplo git show Archivo.txt.
 git diff --> muestra las diferencias entre commits: Ejemplo git diff NumeroComitt
