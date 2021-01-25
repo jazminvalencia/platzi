@@ -10,6 +10,16 @@ git show --> cambios que ha tenido un archivo: Ejemplo git show Archivo.txt.
 git diff --> muestra las diferencias entre commits: Ejemplo git diff NumeroComitt
 
 
+CONFIGURACION DE UN ORIGEN REMOTO
+git remote add origin "URL del archivo en github" --> sirve para hacer remoto el proyecto que tienes en local
+
+
+ERROR AL FUCIONAR CAMBIOS.
+cuando haces el primer push y aparece 
+fatal: reusing to merge unrelated histories.
+Se utiliza el comando: git pull origin master --allow--unrelated-histories
+Permite fucionar lo que hay en remoto con lo que hay en la computadora local
+
 CONFIGURACION DE QUIENES SUBEN LOS CAMBIOS:
 git config --> para que te muestre las opciones de configuracion.
 git config --list --> Configuracion que tienes ahora mismo en tu git.
