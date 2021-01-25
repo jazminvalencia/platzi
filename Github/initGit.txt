@@ -12,6 +12,9 @@ git diff --> muestra las diferencias entre commits: Ejemplo git diff NumeroComit
 
 CONFIGURACION DE UN ORIGEN REMOTO
 git remote add origin "URL del archivo en github" --> sirve para hacer remoto el proyecto que tienes en local
+git remote -v --> para sabaer en que url estas
+git remote set-url origin git@github.com:jazminvalencia/platzi.git --> para cambiar la url del repositorio en este caso a ssh
+
 
 
 ERROR AL FUCIONAR CAMBIOS.
