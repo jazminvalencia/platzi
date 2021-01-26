@@ -5,10 +5,17 @@ git rm --cached --> para borrar archivos en cache: Ejemplo --> git rm --cached i
 git commit --> envia los cambios al repositorio.
 git commit -m "Mensaje" --> envia los cambios al repositorio pero con un mensaje incluido.
 git commit -am "Mensaje" --> es el comando add y commit juntos.
-git log --> muestra toda la historia que han tenido los archivos.
 git show --> cambios que ha tenido un archivo: Ejemplo git show Archivo.txt.
 git diff --> muestra las diferencias entre commits: Ejemplo git diff NumeroComitt
 
+MAS DEL COMANDO LOG 
+git log --> muestra toda la historia que han tenido los archivos.
+git log --all --> muestra todo lo que se hace historicamente
+git log --all --graph --> muestra como ha funcionado los branches.
+git log --all --graph --decorate --oneline --> muestra todo mas comprimodo.
+
+ALIAS
+alias nombre= "git log --all --graph --decorate --oneline"
 
 CONFIGURACION DE UN ORIGEN REMOTO
 git remote add origin "URL del archivo en github" --> sirve para hacer remoto el proyecto que tienes en local
