@@ -1,0 +1,31 @@
+Necesitas ester en la home de tu instalacion
+ssh-keygen -t --> espesifica el algoritmo que vamos a usar 
+4096 --> complejidad de la llave
+-C -->  a que correo electronico esta conectada esta llave
+COMANDOS
+ssh-keygen -t rsa -b 4096 -C "angelvalencia98@gmail.com"
+
+Despues de eso te muestra donde se guardara la llave y te pide una contraseña
+puedes dejarla vacia.
+
+COMANDOS PARA MAC para agregar la contraseña
+Entras en terminal 
+cd ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "angelvalencia98@gmail.com" --> genera llaves publicas y prividas
+
+# Encender el "servidor" de llaves SSH de tu computadora:
+eval "$(ssh-agent -s)"
+
+# Si usas una versión de OSX superior a Mac Sierra (v10.12)
+# debes crear o modificar un archivo "config" en la carpeta
+# de tu usuario con el siguiente contenido (ten cuidado con
+# las mayúsculas):
+Host *
+        AddKeysToAgent yes
+        UseKeychain yes
+        IdentityFile ruta-donde-guardaste-tu-llave-privada
+
+# Añadir tu llave SSH al "servidor" de llaves SSH de tu
+# computadora (en caso de error puedes ejecutar este
+# mismo comando pero sin el argumento -K):
+ssh-add -K ruta-donde-guardaste-tu-llave-privada

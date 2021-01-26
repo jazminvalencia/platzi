@@ -1,0 +1,8 @@
+CREAR TAG
+Copias el hash del commit
+git tag -a v0.1 -m "Mensaje" hashDellog
+
+COMO SABER A QUE COMMIT ESTA asignado
+git show-ref --tags
+
+ENVIAR EL TAG A GITHUB
