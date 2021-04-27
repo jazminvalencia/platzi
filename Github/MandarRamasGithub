@@ -1,0 +1,13 @@
+git show-banch --> cuales son las ramas que existen y sus historias
+git show-branch --all --> cuales son las ramas que existen y sus historias pero con mas datos
+
+
+gitk --> abre en un software la historia de una manera visual
+
+MANDAR RAMA 
+git push origin NombreRama
+
+CREAR RAMA
+git branch NombreRamaNueva
+
+

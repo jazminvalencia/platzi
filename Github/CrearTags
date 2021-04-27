@@ -6,3 +6,11 @@ COMO SABER A QUE COMMIT ESTA asignado
 git show-ref --tags
 
 ENVIAR EL TAG A GITHUB
+git push origin --tags
+
+BORRAR TAG
+git tag --d nombredeltag --> no lo elimina de github pero si del local
+git push origin :refs/tags/nombredeltag --> borra del local y de github
+
+COMO SABER CUANTOS TAGS EXISTEN
+git tags

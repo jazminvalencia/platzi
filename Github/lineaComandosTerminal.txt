@@ -11,6 +11,8 @@ mkdir--> crea una carpeta
 touch --> comando que permite crear archivos que no tienen nada por dentro: Ejemplo --> "touch vacio.txt"
 cat --> muestra rapidamente el contenido del archivo: Ejemplo --> "cat vacio.txt"
 history --> muestra todos los comandos que has realizado. Puedes utilizar los comandos que te muestra history con "!NumeroComando"
-rm --> para borrar un archivo: Ejamplo --> "rm vacio.txt" CUIDADO CON EL COMANDO RM PUEDES BORRAR EL DISCO 
+rm --> para borrar un archivo: Ejamplo --> "rm vacio.txt" CUIDADO CON EL COMANDO RM PUEDES 
+rm -rf .git --> para borrar un archivo: Ejamplo
+BORRAR EL DISCO 
 --help --> explica como funciona cada comando.
-
+vim nombreArchivo.txt --> puedes cambiar lo que tiene un archivo txt
